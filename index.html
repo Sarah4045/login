@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                <div id="password-requirements">
+                    <p><span id="length" class="requirement">Password must be at least 8 characters</span></p>
+                    <p><span id="uppercase" class="requirement">At least one uppercase letter</span></p>
+                    <p><span id="number" class="requirement">At least one number</span></p>
+                </div>
+            </div>
+            <div class="input-group">
+                <button type="submit">Login</button>
+            </div>
+            <p><a href="#" id="forget-password">Forgot password?</a></p>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
